@@ -1,0 +1,158 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Bakery Menu</title>
+  <link rel="stylesheet" href="styles.css">
+  <style>
+    body {
+  font-family: 'Georgia', serif;
+  background-color: #fff;
+  margin: 40px;
+}
+
+.container {
+  display: flex;
+  justify-content: center;
+  gap: 60px;
+}
+
+.column {
+  display: flex;
+  flex-direction: column;
+  gap: 30px;
+}
+
+.item {
+  display: flex;
+  align-items: center;
+  gap: 20px;
+  position: relative;
+}
+
+.item img {
+  width: 80px;
+  height: 80px;
+  object-fit: cover;
+  border-radius: 4px;
+}
+
+.info {
+  flex-grow: 1;
+}
+
+.info h3 {
+  font-size: 14px;
+  color: #222;
+  margin: 0;
+  letter-spacing: 1px;
+}
+
+.info p {
+  font-size: 13px;
+  color: #666;
+  margin: 5px 0 0 0;
+}
+
+.badge {
+  font-size: 11px;
+  padding: 3px 8px;
+  border-radius: 3px;
+  position: absolute;
+  right: 0;
+  top: 50%;
+  transform: translateY(-50%);
+  color: white;
+  background-color: #ccc;
+}
+
+.badge.eco {
+  background-color: #c7a47a;
+}
+
+.badge.new {
+  background-color: #e7d7c3;
+  color: #000;
+  border: 1px solid #ddd;
+}
+
+.badge.sale {
+  background-color: #c7a47a;
+}
+
+  </style>
+</head>
+<body>
+  <div class="container">
+    <div class="column">
+      <div class="item">
+        <img src="cake-chocolate.jpg" alt="Cake Chocolate">
+        <div class="info">
+          <h3>CAKE CHOCOLATE</h3>
+          <p>Lorem ipsum dolor sit</p>
+        </div>
+        <span class="badge eco">ECO</span>
+      </div>
+      <div class="item">
+        <img src="fresh-bread.jpg" alt="Fresh Bread">
+        <div class="info">
+          <h3>FRESH BREAD</h3>
+          <p>Lorem ipsum dolor sit amt</p>
+        </div>
+        <span class="badge new">NEW</span>
+      </div>
+      <div class="item">
+        <img src="cookie-left.jpg" alt="Cookies">
+        <div class="info">
+          <h3>COOKIES</h3>
+          <p>Lorem ipsum dolor sit amt</p>
+        </div>
+        <span class="badge new">NEW</span>
+      </div>
+      <div class="item">
+        <img src="breakfast.jpg" alt="Breakfast">
+        <div class="info">
+          <h3>BREAKFAST</h3>
+          <p>Lorem ipsum dolor sit</p>
+        </div>
+        <span class="badge sale">SALE</span>
+      </div>
+    </div>
+
+    <div class="column">
+      <div class="item">
+        <img src="cookie-right.jpg" alt="Cookies">
+        <div class="info">
+          <h3>COOKIES</h3>
+          <p>Lorem ipsum dolor sit amt</p>
+        </div>
+        <span class="badge new">NEW</span>
+      </div>
+      <div class="item">
+        <img src="cake.jpg" alt="Cake">
+        <div class="info">
+          <h3>CAKE</h3>
+          <p>Lorem ipsum dolor sit amt</p>
+        </div>
+        <span class="badge new">NEW</span>
+      </div>
+      <div class="item">
+        <img src="sweet-snack.jpg" alt="Sweet Snack">
+        <div class="info">
+          <h3>SWEET SNACK</h3>
+          <p>Lorem ipsum dolor</p>
+        </div>
+        <span class="badge eco">ECO</span>
+      </div>
+      <div class="item">
+        <img src="muffin.jpg" alt="Muffin">
+        <div class="info">
+          <h3>MUFFIN</h3>
+          <p>Lorem ipsum sit amt</p>
+        </div>
+        <span class="badge new">NEW</span>
+      </div>
+    </div>
+  </div>
+</body>
+</html>

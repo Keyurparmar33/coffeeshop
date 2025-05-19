@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Discover Our Products</title>
+  <link rel="stylesheet" href="styles.css">
+  <style>
+    * {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Georgia', serif;
+  color: #fff;
+  background-color: #1f1f1f;
+}
+
+.product-section {
+  display: flex;
+  flex-wrap: wrap;
+  min-height: 100vh;
+}
+
+.image-container {
+  flex: 1 1 50%;
+}
+
+.image-container img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.content {
+  flex: 1 1 50%;
+  padding: 4rem 3rem;
+  background-color: #1f1f1f;
+}
+
+.subtitle {
+  font-size: 0.9rem;
+  letter-spacing: 2px;
+  color: #c9c9c9;
+  margin-bottom: 1rem;
+}
+
+h1 {
+  font-size: 3rem;
+  margin-bottom: 2rem;
+  line-height: 1.2;
+}
+
+.description-columns {
+  display: flex;
+  gap: 2rem;
+  margin-bottom: 2rem;
+}
+
+.description-columns p {
+  flex: 1;
+  font-size: 0.95rem;
+  line-height: 1.6;
+}
+
+.all-products-btn {
+  background-color: #c8a579;
+  color: #fff;
+  border: none;
+  padding: 0.8rem 2rem;
+  font-size: 0.9rem;
+  cursor: pointer;
+  margin-bottom: 2rem;
+  transition: background-color 0.3s ease;
+}
+
+.all-products-btn:hover {
+  background-color: #a87f53;
+}
+
+.price-tag {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+}
+
+.new-badge {
+  background-color: #e6c198;
+  color: #1f1f1f;
+  padding: 0.2rem 0.5rem;
+  font-size: 0.7rem;
+  font-weight: bold;
+  border-radius: 3px;
+}
+
+.price {
+  font-size: 1.5rem;
+  font-weight: bold;
+}
+
+@media (max-width: 768px) {
+  .product-section {
+    flex-direction: column;
+  }
+
+  .description-columns {
+    flex-direction: column;
+  }
+
+  h1 {
+    font-size: 2rem;
+  }
+
+  .content {
+    padding: 2rem;
+  }
+}
+
+  </style>
+</head>
+<body>
+  <section class="product-section">
+    <div class="image-container">
+      <img src="lkfiubffe.png" alt="Baristas at work" />
+    </div>
+    <div class="content_product">
+      <p class="subtitle">TASTE OUR INGREDIENTS</p>
+      <h1>Discover our Products</h1>
+      <div class="description-columns">
+        <p>Phasellus enim libero, blandit vel sapien vitae, condimentum ultricies magna et. Quisque euismod orci ut et lobortis. Blandit vel sapien vitae, condimentum ultricies magna et orci ut et lobortis, Phasellus enim</p>
+        <p>Phasellus enim libero, blandit vel sapien vitae, condimentum ultricies magna et. Quisque euismod orci ut et lobortis. Blandit vel sapien vitae, condimentum ultricies magna et orci ut et lobortis, Phasellus enim</p>
+      </div>
+      <button class="all-products-btn">ALL PRODUCTS</button>
+    </div>
+  </section>
+</body>
+</html>
